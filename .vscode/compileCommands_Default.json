@@ -1,0 +1,42 @@
+[
+	{
+		"file": "E:\\Unreal Projects\\ObstacleAssult\\Source\\ObstacleAssult\\MovingPlatform.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@E:\\Unreal Projects\\ObstacleAssult\\.vscode\\compileCommands_Default\\ObstacleAssult.249.rsp"
+		],
+		"directory": "C:\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal Projects\\ObstacleAssult\\Source\\ObstacleAssult\\MovingPlatform.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@E:\\Unreal Projects\\ObstacleAssult\\.vscode\\compileCommands_Default\\ObstacleAssult.249.rsp"
+		],
+		"directory": "C:\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal Projects\\ObstacleAssult\\Source\\ObstacleAssult\\ObstacleAssult.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@E:\\Unreal Projects\\ObstacleAssult\\.vscode\\compileCommands_Default\\ObstacleAssult.249.rsp"
+		],
+		"directory": "C:\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal Projects\\ObstacleAssult\\Source\\ObstacleAssult\\ObstacleAssult.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@E:\\Unreal Projects\\ObstacleAssult\\.vscode\\compileCommands_Default\\ObstacleAssult.249.rsp"
+		],
+		"directory": "C:\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal Projects\\ObstacleAssult\\Source\\ObstacleAssult\\ObstacleAssult.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe",
+			"@E:\\Unreal Projects\\ObstacleAssult\\.vscode\\compileCommands_Default\\ObstacleAssult.249.rsp"
+		],
+		"directory": "C:\\UE_5.1\\Engine\\Source"
+	}
+]
