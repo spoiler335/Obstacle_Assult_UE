@@ -20,16 +20,16 @@ void AMovingPlatform::BeginPlay()
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	SetActorLocation(GetActorLocation() + FVector(0, speed * DeltaTime, 0));
+	SetActorLocation(GetActorLocation() + velocity * DeltaTime);
 
-	if (GetActorLocation().Y - startLocation.Y > 500)
+	if (GetActorLocation().Z - startLocation.Z > maxupDistance)
 	{
-		speed = -speed;
-		startLocation = GetActorLocation();
+		velocity = -velocity;
+		// startLocation = GetActorLocation();
 	}
-	else if (GetActorLocation().Y - startLocation.Y < -500)
+	else if (GetActorLocation().Z - startLocation.Z < -2 * maxupDistance)
 	{
-		speed = -speed;
-		startLocation = GetActorLocation();
+		velocity = -velocity;
+		// startLocation = GetActorLocation();
 	}
 }

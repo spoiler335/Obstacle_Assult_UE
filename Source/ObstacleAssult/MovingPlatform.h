@@ -25,8 +25,12 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere)
-	float speed = 20;
+	FVector velocity = FVector();
 
 private:
 	FVector startLocation;
+
+private:
+	UPROPERTY(EditAnywhere)
+	int32 maxupDistance = 500;
 };
