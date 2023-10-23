@@ -32,5 +32,5 @@ private:
 
 private:
 	UPROPERTY(EditAnywhere)
-	int32 maxupDistance = 500;
+	int32 maxDistance = 500;
 };
