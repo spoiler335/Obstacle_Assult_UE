@@ -21,8 +21,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+	void MovePlatform(float DeltaTime);
+	void RotatePlatform(float DeltaTime);
+	bool IsAtMaxDistance() const;
+
+private:
 	UPROPERTY(EditAnywhere)
 	FVector velocity = FVector();
+	UPROPERTY(EditAnywhere)
+	FRotator rotationalVelocity = FRotator();
 
 private:
 	FVector startLocation;

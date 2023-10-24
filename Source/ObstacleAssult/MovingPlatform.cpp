@@ -11,21 +11,37 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	startLocation = GetActorLocation();
+	UE_LOG(LogTemp, Display, TEXT("MovingPlatform :: BeginPlay() :: name = %s"), *GetName());
 }
 
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
+}
 
+void AMovingPlatform::MovePlatform(float deltaTime)
+{
 	FVector currentLocation = GetActorLocation();
-	currentLocation += velocity * DeltaTime;
+	currentLocation += velocity * deltaTime;
 	SetActorLocation(currentLocation);
-	float distance = FVector::Dist(startLocation, currentLocation);
-	if (distance > maxDistance)
+	if (IsAtMaxDistance())
 	{
 		FVector direction = velocity.GetSafeNormal();
 		startLocation += direction * maxDistance;
 		SetActorLocation(startLocation);
 		velocity = -velocity;
 	}
+}
+
+void AMovingPlatform::RotatePlatform(float deltaTime)
+{
+	AddActorLocalRotation(rotationalVelocity * deltaTime);	
+}
+
+bool AMovingPlatform::IsAtMaxDistance() const
+{
+	float distance = FVector::Dist(startLocation, GetActorLocation());
+	return distance > maxDistance;
 }
